@@ -1,0 +1,120 @@
+{
+  "uid" : "41e8e6e95b7c75b5",
+  "name" : "用户注册",
+  "fullName" : "test_case.test_login_module.TestLoginModule#test_register",
+  "historyId" : "13a0acdd59b00e1a0f6d06b7d22e1536",
+  "time" : {
+    "start" : 1629907674351,
+    "stop" : 1629907674530,
+    "duration" : 179
+  },
+  "description" : "通过接口进行用户注册",
+  "descriptionHtml" : "<p>通过接口进行用户注册</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "通过接口进行用户注册",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "读取请求数据，调用接口",
+      "time" : {
+        "start" : 1629907674352,
+        "stop" : 1629907674529,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "获取响应数据，进行断言",
+      "time" : {
+        "start" : 1629907674529,
+        "stop" : 1629907674530,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "64bd365b2e8f3782",
+      "name" : "log",
+      "source" : "64bd365b2e8f3782.txt",
+      "type" : "text/plain",
+      "size" : 823
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "注册功能"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_module"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginModule"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-13387BR"
+  }, {
+    "name" : "thread",
+    "value" : "2748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login_module"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "[2.0, '用户名重复，注册失败', 'http://39.100.104.214:8080', '/register/', 'post', '{\"username\":\"juno${unique_num1}\",\"password\":\"juno999999\",\"email\":\"juno123@qq.com\"}', '\"code\": \"01\"', '', '', '']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "41e8e6e95b7c75b5.json",
+  "parameterValues" : [ "[2.0, '用户名重复，注册失败', 'http://39.100.104.214:8080', '/register/', 'post', '{\"username\":\"juno${unique_num1}\",\"password\":\"juno999999\",\"email\":\"juno123@qq.com\"}', '\"code\": \"01\"', '', '', '']" ]
+}

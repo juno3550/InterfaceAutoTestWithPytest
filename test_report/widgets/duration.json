@@ -1,0 +1,181 @@
+[ {
+  "uid" : "a9e063ba23abac18",
+  "name" : "删除博文",
+  "time" : {
+    "start" : 1629907679087,
+    "stop" : 1629907679298,
+    "duration" : 211
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4ca6ce593a277005",
+  "name" : "创建博文",
+  "time" : {
+    "start" : 1629907677512,
+    "stop" : 1629907677712,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "41e8e6e95b7c75b5",
+  "name" : "用户注册",
+  "time" : {
+    "start" : 1629907674351,
+    "stop" : 1629907674530,
+    "duration" : 179
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9c7fb473d7fc68f0",
+  "name" : "更新博文内容",
+  "time" : {
+    "start" : 1629907678443,
+    "stop" : 1629907678601,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "928fd66149be506e",
+  "name" : "批量查询博文",
+  "time" : {
+    "start" : 1629907678788,
+    "stop" : 1629907678917,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8f972462257f4377",
+  "name" : "删除博文",
+  "time" : {
+    "start" : 1629907679310,
+    "stop" : 1629907679439,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "150f129aaf81c31f",
+  "name" : "用户登录",
+  "time" : {
+    "start" : 1629907675025,
+    "stop" : 1629907675628,
+    "duration" : 603
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "43dc24eab8dcd7ee",
+  "name" : "创建博文",
+  "time" : {
+    "start" : 1629907677334,
+    "stop" : 1629907677497,
+    "duration" : 163
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "93000324a8016c7a",
+  "name" : "查看博文内容",
+  "time" : {
+    "start" : 1629907678158,
+    "stop" : 1629907678284,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d08fac4ece00ec22",
+  "name" : "查看用户博文",
+  "time" : {
+    "start" : 1629907677725,
+    "stop" : 1629907677919,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "77bac1a9be6aa799",
+  "name" : "用户登录",
+  "time" : {
+    "start" : 1629907675639,
+    "stop" : 1629907676260,
+    "duration" : 621
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2287eec54c7f212",
+  "name" : "更新博文内容",
+  "time" : {
+    "start" : 1629907678612,
+    "stop" : 1629907678777,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c2f39569f374b874",
+  "name" : "批量查询博文",
+  "time" : {
+    "start" : 1629907678928,
+    "stop" : 1629907679075,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8db162b0c1a180aa",
+  "name" : "查看用户博文",
+  "time" : {
+    "start" : 1629907677933,
+    "stop" : 1629907678147,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "59a0b2d61cf702a6",
+  "name" : "用户注册",
+  "time" : {
+    "start" : 1629907674544,
+    "stop" : 1629907675012,
+    "duration" : 468
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5e792b44457ea9aa",
+  "name" : "查看博文内容",
+  "time" : {
+    "start" : 1629907678295,
+    "stop" : 1629907678432,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "bfa1537d2e1423a0",
+  "name" : "用户注册",
+  "time" : {
+    "start" : 1629907674132,
+    "stop" : 1629907674338,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5847db81c22255cc",
+  "name" : "用户登录",
+  "time" : {
+    "start" : 1629907676274,
+    "stop" : 1629907677322,
+    "duration" : 1048
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

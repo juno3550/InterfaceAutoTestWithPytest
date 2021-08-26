@@ -1,0 +1,120 @@
+{
+  "uid" : "5e792b44457ea9aa",
+  "name" : "查看博文内容",
+  "fullName" : "test_case.test_edit_module.TestEditModule#test_blog_content_search",
+  "historyId" : "416b196eb12787a78916dd535df9932e",
+  "time" : {
+    "start" : 1629907678295,
+    "stop" : 1629907678432,
+    "duration" : 137
+  },
+  "description" : "通过接口查看博文内容",
+  "descriptionHtml" : "<p>通过接口查看博文内容</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "通过接口查看博文内容",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "读取请求数据，调用接口",
+      "time" : {
+        "start" : 1629907678295,
+        "stop" : 1629907678430,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "获取响应数据，进行断言",
+      "time" : {
+        "start" : 1629907678431,
+        "stop" : 1629907678431,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b16ec22e593aaf0e",
+      "name" : "log",
+      "source" : "b16ec22e593aaf0e.txt",
+      "type" : "text/plain",
+      "size" : 627
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "博文内容查询功能"
+  }, {
+    "name" : "feature",
+    "value" : "编辑模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_edit_module"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEditModule"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-13387BR"
+  }, {
+    "name" : "thread",
+    "value" : "2748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_edit_module"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "[2.0, 'articleId有误，查询失败', 'http://39.100.104.214:8080', '/getBlogContent/1234', 'get', '', '\"code\": \"03\"', '', '', '']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=5)" ]
+  },
+  "source" : "5e792b44457ea9aa.json",
+  "parameterValues" : [ "[2.0, 'articleId有误，查询失败', 'http://39.100.104.214:8080', '/getBlogContent/1234', 'get', '', '\"code\": \"03\"', '', '', '']" ]
+}

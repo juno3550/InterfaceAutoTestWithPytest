@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[2.0, 'articleId有误，查询失败', 'http://39.100.104.214:8080', '/getBlogContent/1234', 'get', '', '"code": "03"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：/getBlogContent/1234
+INFO     root:log_util.py:16 请求数据预处理结果：/getBlogContent/1234
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"code": "03", "articleId": "1234"}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "03"】关键字断言成功【{"code": "03", "articleId": "1234"}】

@@ -1,0 +1,247 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-13387BR",
+    "children" : [ {
+      "name" : "2748-MainThread",
+      "children" : [ {
+        "name" : "创建博文",
+        "uid" : "4ca6ce593a277005",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907677512,
+          "stop" : 1629907677712,
+          "duration" : 200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, '创建博文失败', 'http://39.100.104.214:8080', '/create/', 'post', '{\"userid\":${userid}, \"token\":\"123\", \"title\":\"title test\", \"content\":\"content test\"}', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "查看博文内容",
+        "uid" : "93000324a8016c7a",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678158,
+          "stop" : 1629907678284,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '博文内容查询成功', 'http://39.100.104.214:8080', '/getBlogContent/${articleId}', 'get', '', '\"content\": \"content test\"', '', '', '']" ]
+      }, {
+        "name" : "批量查询博文",
+        "uid" : "c2f39569f374b874",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678928,
+          "stop" : 1629907679075,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, 'articleId有误，博文批量查询失败', 'http://39.100.104.214:8080', '/getBlogsContent/articleIds=null', 'get', '', '\"code\": \"999\"', '', '', '']" ]
+      }, {
+        "name" : "查看用户博文",
+        "uid" : "8db162b0c1a180aa",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907677933,
+          "stop" : 1629907678147,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, '用户token有误，查询失败', 'http://39.100.104.214:8080', '/getBlogsOfUser/', 'post', '{\"userid\":${userid}, \"token\":\"123\"}', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "用户登录",
+        "uid" : "150f129aaf81c31f",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907675025,
+          "stop" : 1629907675628,
+          "duration" : 603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '登录成功', 'http://39.100.104.214:8080', '/login/', 'post', '{\"username\":\"juno${unique_num1}\",\"password\":\"${md5(\\'juno999999\\')}\"}', '\"token\"', 'token', '', '']" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "bfa1537d2e1423a0",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907674132,
+          "stop" : 1629907674338,
+          "duration" : 206
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '注册成功', 'http://39.100.104.214:8080', '/register/', 'post', '{\"username\":\"juno${get_unique_num1}\",\"password\":\"juno999999\",\"email\":\"juno123@qq.com\"}', '\"code\": \"00\"', 'userid', '', '']" ]
+      }, {
+        "name" : "更新博文内容",
+        "uid" : "2287eec54c7f212",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678612,
+          "stop" : 1629907678777,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, 'articleId有误，更新失败', 'http://39.100.104.214:8080', '/update/', 'put', '{\"userid\":${userid}, \"token\": \"${token}\", \"articleId\":1234, \"title\":\"python\", \"content\":\"test test\"}', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "创建博文",
+        "uid" : "43dc24eab8dcd7ee",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907677334,
+          "stop" : 1629907677497,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '创建博文成功', 'http://39.100.104.214:8080', '/create/', 'post', '{\"userid\":${userid}, \"token\":\"${token}\", \"title\":\"title test\", \"content\":\"content test\"}', '\"code\": \"00\"', '', '', '']" ]
+      }, {
+        "name" : "批量查询博文",
+        "uid" : "928fd66149be506e",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678788,
+          "stop" : 1629907678917,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '博文批量查询成功', 'http://39.100.104.214:8080', '/getBlogsContent/articleIds=${articleId}', 'get', '', '\"code\": \"00\"', '', '', '']" ]
+      }, {
+        "name" : "查看用户博文",
+        "uid" : "d08fac4ece00ec22",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907677725,
+          "stop" : 1629907677919,
+          "duration" : 194
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '用户存在博文，查询成功', 'http://39.100.104.214:8080', '/getBlogsOfUser/', 'post', '{\"userid\":${userid}, \"token\":\"${token}\"}', '\"title\"', 'articleId', '', '']" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "41e8e6e95b7c75b5",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907674351,
+          "stop" : 1629907674530,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, '用户名重复，注册失败', 'http://39.100.104.214:8080', '/register/', 'post', '{\"username\":\"juno${unique_num1}\",\"password\":\"juno999999\",\"email\":\"juno123@qq.com\"}', '\"code\": \"01\"', '', '', '']" ]
+      }, {
+        "name" : "用户登录",
+        "uid" : "5847db81c22255cc",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907676274,
+          "stop" : 1629907677322,
+          "duration" : 1048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[3.0, '密码错误，登录成功', 'http://39.100.104.214:8080', '/login/', 'post', '{\"username\":\"juno${unique_num2}\",\"password\":\"juno999999\"}', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "59a0b2d61cf702a6",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907674544,
+          "stop" : 1629907675012,
+          "duration" : 468
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, '注册成功', 'http://39.100.104.214:8080', '/register/', 'post', '{\"username\":\"juno${get_unique_num2}\",\"password\":\"juno999999\",\"email\":\"juno123@qq.com\"}', '\"code\": \"00\"', 'userid', '', '']" ]
+      }, {
+        "name" : "用户登录",
+        "uid" : "77bac1a9be6aa799",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907675639,
+          "stop" : 1629907676260,
+          "duration" : 621
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, '登录成功', 'http://39.100.104.214:8080', '/login/', 'post', '{\"username\":\"juno${unique_num2}\",\"password\":\"${md5(\\'juno999999\\')}\"}', '\"token\"', 'token', '', '']" ]
+      }, {
+        "name" : "查看博文内容",
+        "uid" : "5e792b44457ea9aa",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678295,
+          "stop" : 1629907678432,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, 'articleId有误，查询失败', 'http://39.100.104.214:8080', '/getBlogContent/1234', 'get', '', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "删除博文",
+        "uid" : "8f972462257f4377",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907679310,
+          "stop" : 1629907679439,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2.0, 'token有误，更新失败', 'http://39.100.104.214:8080', '/delete/', 'post', '{\"userid\":${userid}, \"token\": \"123\", \"articleId\":[]}', '\"code\": \"03\"', '', '', '']" ]
+      }, {
+        "name" : "更新博文内容",
+        "uid" : "9c7fb473d7fc68f0",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907678443,
+          "stop" : 1629907678601,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '博文内容更新成功', 'http://39.100.104.214:8080', '/update/', 'put', '{\"userid\":${userid}, \"token\": \"${token}\", \"articleId\":${articleId}, \"title\":\"python\", \"content\":\"test test\"}', '\"update_time\":', '', '', '']" ]
+      }, {
+        "name" : "删除博文",
+        "uid" : "a9e063ba23abac18",
+        "parentUid" : "3882a6cdeb4b31aaf48580164d8cf3a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629907679087,
+          "stop" : 1629907679298,
+          "duration" : 211
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1.0, '博文删除成功', 'http://39.100.104.214:8080', '/delete/', 'post', '{\"userid\":${userid}, \"token\": \"${token}\", \"articleId\":[${articleId}]}', '\"code\": \"00\"', '', '', '']" ]
+      } ],
+      "uid" : "3882a6cdeb4b31aaf48580164d8cf3a4"
+    } ],
+    "uid" : "7181e53ebb64412cb716b07b00320ea4"
+  } ]
+}

@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '创建博文成功', 'http://39.100.104.214:8080', '/create/', 'post', '{"userid":${userid}, "token":"${token}", "title":"title test", "content":"content test"}', '"code": "00"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"userid":${userid}, "token":"${token}", "title":"title test", "content":"content test"}
+INFO     root:log_util.py:16 请求数据预处理结果：{"userid":337, "token":"e951750fd86bfe9d643d46b42fa2f1c7", "title":"title test", "content":"content test"}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"data": [{"content": "content test", "title": "title test"}], "code": "00", "userid": 337}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "00"】关键字断言成功【{"data": [{"content": "content test", "title": "title test"}], "code": "00", "userid": 337}】
