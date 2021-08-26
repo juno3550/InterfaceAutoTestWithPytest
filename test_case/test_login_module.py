@@ -49,5 +49,5 @@ class TestLoginModule:
 if __name__ == "__main__":
     test_dir = os.path.dirname(__file__)
     pytest.main(['-s', '-q', test_dir, '--alluredir', '../test_result/', "--clean-alluredir"])
-    #os.system('allure generate ../test_result/ -o ../test_report/ --clean')
-    #os.system('allure open -h 127.0.0.1 -p 8881 ../test_report/')
+    os.system('allure generate ../test_result/ -o ../test_report/ --clean')
+    os.system('allure open -h 127.0.0.1 -p 8881 ../test_report/')
