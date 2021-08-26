@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '用户存在博文，查询成功', 'http://39.100.104.214:8080', '/getBlogsOfUser/', 'post', '{"userid":${userid}, "token":"${token}"}', '"title"', 'articleId', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"userid":${userid}, "token":"${token}"}
+INFO     root:log_util.py:16 请求数据预处理结果：{"userid":343, "token":"5d31e610094e895e9411d9dddec35055"}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"data": [{"update_time": null, "title": "title test", "content": "content test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}], "code": "00", "userid": 343}
+INFO     root:log_util.py:16 关联参数提取成功：【articleId: 143】
+INFO     root:log_util.py:16 【"title"】关键字断言成功【{"data": [{"update_time": null, "title": "title test", "content": "content test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}], "code": "00", "userid": 343}】

@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[2.0, 'token有误，更新失败', 'http://39.100.104.214:8080', '/delete/', 'post', '{"userid":${userid}, "token": "123", "articleId":[]}', '"code": "03"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"userid":${userid}, "token": "123", "articleId":[]}
+INFO     root:log_util.py:16 请求数据预处理结果：{"userid":343, "token": "123", "articleId":[]}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"code": "03", "userid": 343}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "03"】关键字断言成功【{"code": "03", "userid": 343}】

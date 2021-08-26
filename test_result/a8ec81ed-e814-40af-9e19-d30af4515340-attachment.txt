@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[2.0, '登录成功', 'http://39.100.104.214:8080', '/login/', 'post', '{"username":"juno${unique_num2}","password":"${md5(\'juno999999\')}"}', '"token"', 'token', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"username":"juno${unique_num2}","password":"${md5('juno999999')}"}
+INFO     root:log_util.py:16 请求数据预处理结果：{"username":"juno30308","password":"4c1c1924ad2ba4d1136acee44a1b39a2"}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"token": "5d31e610094e895e9411d9dddec35055", "code": "00", "userid": 343, "login_time": "2021-08-26 00:23:03"}
+INFO     root:log_util.py:16 关联参数提取成功：【token: 5d31e610094e895e9411d9dddec35055】
+INFO     root:log_util.py:16 【"token"】关键字断言成功【{"token": "5d31e610094e895e9411d9dddec35055", "code": "00", "userid": 343, "login_time": "2021-08-26 00:23:03"}】

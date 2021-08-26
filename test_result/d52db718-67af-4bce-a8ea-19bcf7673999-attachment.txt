@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '博文批量查询成功', 'http://39.100.104.214:8080', '/getBlogsContent/articleIds=${articleId}', 'get', '', '"code": "00"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：/getBlogsContent/articleIds=${articleId}
+INFO     root:log_util.py:16 请求数据预处理结果：/getBlogsContent/articleIds=143
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"code": "00", "data": [{"update_time": "2021-08-26 00:23:05", "title": "python", "content": "test test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}]}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "00"】关键字断言成功【{"code": "00", "data": [{"update_time": "2021-08-26 00:23:05", "title": "python", "content": "test test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}]}】

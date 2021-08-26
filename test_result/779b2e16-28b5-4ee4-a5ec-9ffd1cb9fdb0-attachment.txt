@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '博文内容更新成功', 'http://39.100.104.214:8080', '/update/', 'put', '{"userid":${userid}, "token": "${token}", "articleId":${articleId}, "title":"python", "content":"test test"}', '"update_time":', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"userid":${userid}, "token": "${token}", "articleId":${articleId}, "title":"python", "content":"test test"}
+INFO     root:log_util.py:16 请求数据预处理结果：{"userid":343, "token": "5d31e610094e895e9411d9dddec35055", "articleId":143, "title":"python", "content":"test test"}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"articleId": 143, "update_time": "2021-08-26 00:23:05", "code": "00", "userid": 343}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"update_time":】关键字断言成功【{"articleId": 143, "update_time": "2021-08-26 00:23:05", "code": "00", "userid": 343}】

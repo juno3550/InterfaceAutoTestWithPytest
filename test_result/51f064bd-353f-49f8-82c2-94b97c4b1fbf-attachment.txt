@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[2.0, 'articleId有误，博文批量查询失败', 'http://39.100.104.214:8080', '/getBlogsContent/articleIds=null', 'get', '', '"code": "999"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：/getBlogsContent/articleIds=null
+INFO     root:log_util.py:16 请求数据预处理结果：/getBlogsContent/articleIds=null
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"code": "999"}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "999"】关键字断言成功【{"code": "999"}】

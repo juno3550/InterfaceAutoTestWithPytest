@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '博文内容查询成功', 'http://39.100.104.214:8080', '/getBlogContent/${articleId}', 'get', '', '"content": "content test"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：/getBlogContent/${articleId}
+INFO     root:log_util.py:16 请求数据预处理结果：/getBlogContent/143
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"code": "00", "data": [{"update_time": null, "title": "title test", "content": "content test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}]}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"content": "content test"】关键字断言成功【{"code": "00", "data": [{"update_time": null, "title": "title test", "content": "content test", "articleId": 143, "owner": 343, "posted_on": "2021-08-26 00:23:04"}]}】

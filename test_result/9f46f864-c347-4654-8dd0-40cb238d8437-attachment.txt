@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[1.0, '博文删除成功', 'http://39.100.104.214:8080', '/delete/', 'post', '{"userid":${userid}, "token": "${token}", "articleId":[${articleId}]}', '"code": "00"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"userid":${userid}, "token": "${token}", "articleId":[${articleId}]}
+INFO     root:log_util.py:16 请求数据预处理结果：{"userid":343, "token": "5d31e610094e895e9411d9dddec35055", "articleId":[143]}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"articleId": [143], "code": "00", "userid": 343}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "00"】关键字断言成功【{"articleId": [143], "code": "00", "userid": 343}】

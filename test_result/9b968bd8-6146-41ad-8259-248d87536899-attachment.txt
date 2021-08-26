@@ -1,0 +1,7 @@
+INFO     root:log_util.py:16 接口用例数据：[2.0, '用户名重复，注册失败', 'http://39.100.104.214:8080', '/register/', 'post', '{"username":"juno${unique_num1}","password":"juno999999","email":"juno123@qq.com"}', '"code": "01"', '', '', '']
+INFO     root:log_util.py:16 请求原始数据：{"username":"juno${unique_num1}","password":"juno999999","email":"juno123@qq.com"}
+INFO     root:log_util.py:16 请求数据预处理结果：{"username":"juno30307","password":"juno999999","email":"juno123@qq.com"}
+INFO     root:log_util.py:16 接口调用成功！
+INFO     root:log_util.py:16 响应数据：{"username": "juno30307", "code": "01"}
+INFO     root:log_util.py:16 无关联参数提取..
+INFO     root:log_util.py:16 【"code": "01"】关键字断言成功【{"username": "juno30307", "code": "01"}】
