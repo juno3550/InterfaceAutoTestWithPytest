@@ -1,8 +1,8 @@
 import pytest
 import allure
+import logging
 from util.assert_util import assert_keyword
 from util.request_util import api_request
-from util.keyword_function import *
 from util.global_var import *
 from util.excel_util import excel_util
 
@@ -14,7 +14,7 @@ login_test_data = excel_util.get_sheet_data("登录")
 @allure.feature("登录模块")
 @pytest.mark.dependency(name="TestLoginModule")
 class TestLoginModule:
-
+        
     @allure.story("注册功能")
     @allure.title('用户注册')  # 指定测试用例标题，默认是函数名
     @allure.description('通过接口进行用户注册')  # 添加测试用例描述
@@ -23,7 +23,7 @@ class TestLoginModule:
     @pytest.mark.parametrize('case_data', register_test_data)
     def test_register(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -38,7 +38,7 @@ class TestLoginModule:
     @pytest.mark.parametrize('case_data', login_test_data)
     def test_login(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])

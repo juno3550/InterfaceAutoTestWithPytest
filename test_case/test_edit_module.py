@@ -1,7 +1,8 @@
 import pytest
 import allure
+import logging
 from util.assert_util import assert_keyword
-from util.request_util import *
+from util.request_util import api_request
 from util.global_var import *
 from util.excel_util import excel_util
 
@@ -18,9 +19,9 @@ delete_test_data = excel_util.get_sheet_data("删除博文")
 @pytest.mark.dependency(name="TestEditModule", depends=["TestLoginModule"], scope='package')
 class TestEditModule:
 
-    # 初始化调用注册和登录接口，获取userid和token供后续接口关联
-    # 使用该初始化则可不依赖test_login_module.py的TestLoginModule
     # def setup_class(self):
+    #     初始化调用注册和登录接口，获取userid和token供后续接口关联
+    #     使用该初始化则可不依赖test_login_module.py的TestLoginModule
     #     get_userid_and_token()
 
     @allure.story("博文创建功能")
@@ -31,7 +32,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', create_test_data)
     def test_create(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -46,7 +47,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', user_blog_search_test_data)
     def test_user_blog_search(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -61,7 +62,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', blog_content_test_data)
     def test_blog_content_search(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -76,7 +77,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', blog_update_test_data)
     def test_blog_content_update(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -91,7 +92,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', blog_batch_search_test_data)
     def test_blog_batch_search(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
@@ -106,7 +107,7 @@ class TestEditModule:
     @pytest.mark.parametrize('case_data', delete_test_data)
     def test_delete(self, case_data):
         with allure.step("读取请求数据，调用接口"):
-            info("接口用例数据：%s" % case_data)
+            logging.info("接口用例数据：%s" % case_data)
             response = api_request(case_data[API_IP], case_data[API_URI], case_data[REQUEST_METHOD],
                                    case_data[API_REQUEST_DATA], case_data[RESPONSE_EXTRACT_VAR],
                                    case_data[REQUEST_HEADER], case_data[REQUEST_COOKIE])
