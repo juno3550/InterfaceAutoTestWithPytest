@@ -1,7 +1,7 @@
 import hashlib
 import traceback
+import logging
 from util.global_var import *
-from util.log_util import *
 
 
 # 获取递增的唯一数参数
@@ -15,8 +15,8 @@ def get_unique_num():
             f.write(str(int(num)+1))
         return num
     except:
-        error("唯一数文件【%s】读写异常！" % UNIQUE_NUM_FILE_PATH)
-        error(traceback.format_exc())
+        logging.error("唯一数文件【%s】读写异常！" % UNIQUE_NUM_FILE_PATH)
+        logging.error(traceback.format_exc())
         raise
 
 

@@ -1,6 +1,5 @@
 import traceback
-import re
-from util.log_util import *
+import logging
 
 
 # 封装断言功能
@@ -9,10 +8,8 @@ def assert_keyword(response, keyword):
     for keyword in keyword_list:
         try:
             assert keyword.strip() in response.text
-            info("【%s】关键字断言成功【%s】" % (keyword, response.text))
+            logging.info("【%s】关键字断言成功【%s】" % (keyword, response.text))
         except:
-            error("【%s】关键字断言失败【%s】" % (keyword, response.text))
-            error(traceback.format_exc())
+            logging.error("【%s】关键字断言失败【%s】" % (keyword, response.text))
+            logging.error(traceback.format_exc())
             raise
-
-

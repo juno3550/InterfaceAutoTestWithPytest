@@ -1,6 +1,7 @@
 import xlrd
 import traceback
-from util.log_util import *
+import logging
+from util.global_var import *
 
 
 class ExcelUtil:
@@ -10,8 +11,8 @@ class ExcelUtil:
 		try:
 			self.wb = xlrd.open_workbook(file_name)
 		except:
-			error("Excel初始化失败：【%s】" % file_name)
-			error(traceback.format_exc())
+			logging.error("Excel初始化失败：【%s】" % file_name)
+			logging.error(traceback.format_exc())
 			raise
 
 	# 根据sheet名获取所有行的用例数据
@@ -19,15 +20,15 @@ class ExcelUtil:
 		try:
 			self.sheet = self.wb.sheet_by_name(sheet_name)
 		except:
-			error("Sheet测试数据读取失败：【%s】" % sheet_name)
-			error(traceback.format_exc())
+			logging.error("Sheet测试数据读取失败：【%s】" % sheet_name)
+			logging.error(traceback.format_exc())
 			raise
 		else:
 			result = []
 			for row_index in range(1, self.sheet.nrows):  # 去除标题行
 				result.append(self.sheet.row_values(row_index))
 			if len(result) < 1:
-				info("【%s】测试数据为空，无需执行" % sheet_name)
+				logging.info("【%s】测试数据为空，无需执行" % sheet_name)
 			return result
 
 
