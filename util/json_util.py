@@ -38,7 +38,7 @@ class JsonHandler:
             if k == key:
                 return v
             elif isinstance(v, dict):
-                return JsonHandler.find_value(k, key)
+                return JsonHandler.find_value(v, key)
             elif isinstance(v, list):
                 for value in v:
                     if isinstance(value, dict):
